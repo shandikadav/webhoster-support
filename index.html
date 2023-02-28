@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Hoster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ps-5 pe-5 pt-3">
+        <div class="container-fluid">
+          <span class="navbar-brand"><img src="assets/img/logo-hoster.png" alt="" class="pe-2">
+            <a class="navbar-brand" href="#">Hoster</a></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline border-0 bg-light rounded-5" type="submit">My Account</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Javascript for scrolled solid navbar -->
+      <script>
+        const navEl = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 56) {
+                navEl.classList.add('navbar-scrolled');
+            } else if (window.scrollY < 56) {
+                navEl.classList.remove('navbar-scrolled');
+            }
+        })
+      </script>
+      <!-- End of Navbar -->
+
+    <!-- Hero -->
+    <section id="hero" class="text-center text-sm-start">
+      <div class="container-fluid hero-section d-flex w-100 vh-100">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <div class="ps-5">
+            <h1 class="d-md-block text-light">Support Center</h1>
+            <p class="lead d-md-block text-light">Browse through our frequently asked questions, tutorials, and other self-help resources to find the answers you need.</p>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn bg-primary text-light" type="submit">Search</button>
+            </form>
+            <div class="pt-3 d-flex gap-4">
+                <p class="lead text-light">POPULAR :</p>
+                <p class="lead text-light"><a href="" class="text-light">What is hosting?</a></p>
+                <p class="lead text-light"><a href="" class="text-light">Why my website is slow?</a></p>
+            </div>
+          </div>
+          <img src="./assets/img/rect5.png" alt="" class="img-fluid pe-5" />
+        </div>
+      </div>
+    </section>
+    <!-- End of hero -->
+
+    <!-- features -->
+    <section class="features">
+        <div class="container-fluid feature-section vh-100 p-5">
+            <div class="row d-flex flex-wrap row-gap-4">
+                <div class="col-4">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo1.png" alt=""></span>Introduction to Hosting</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is web hosting?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Types of web hosting</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to choose a hosting provider</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Common hosting features to look for</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Pros and cons of different hosting types</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo3.png" alt=""></span>Setting up a website</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to register a domain name</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to set up a hosting account</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to install and configurate a CMS</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to upload and manage website...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Tips for optimizing website performa...</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo4.png" alt=""></span>Security and privacy</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How hosting providers protect web...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is SSL and why is it important?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to secure a website with a firewall</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to protect sensitive information...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Tips for avoiding common security...</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo5.png" alt=""></span>Email Hosting</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is email hosting and why do...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to set up and configure email...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Tips for managing and organizing email</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to troubleshoot common email...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Pros and cons of different email...</a></li>
+                        </ul>
+                      </div>
+                </div><div class="col-4">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo6.png" alt=""></span>E-commerse hosting</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is e-commerse hosting and why...</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to choose and e-commerse hosting</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Tips for setting up and managing</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>How to secure and e-commerse website</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>Common e-commerse hosting features</a></li>
+                        </ul>
+                      </div>
+                </div><div class="col-4">
+                    <div class="card p-3">
+                        <ul class="list-group list-group-flush border-0">
+                          <li class="list-group-item border-0 fw-bold"><span class="pe-3"><img src="assets/img/logo7.png" alt=""></span>Advanced hosting concept</li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is server and how does it work?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is a DNS and how does it work?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is CDN and how does it work?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is a load balancer?</a></li>
+                          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-bg-light"><span class="pe-3"><img src="assets/img/logo2.png" alt=""></span>What is a reserve proxy?</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of features -->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex"></div>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

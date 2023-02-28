@@ -1,0 +1,17 @@
+.hero-section {
+    background: url(/assets/img/background.jpg);
+    background-size: cover;
+}
+
+.feature-section {
+    background-color: #EEEEFF;
+    
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: black;
+}
